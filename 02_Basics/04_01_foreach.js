@@ -63,9 +63,11 @@ userBooks=books.filter( (bk)=>{ return bk.published >1985 && bk.genre==="History
 // Map Function
 
 // const result=arrNum.map( (num)=>{return num+10});
-// console.log(result);
+//  const result=arrNum.map( (num)=>num*10)
+//  console.log(result);
 
 // Chaining
 
-const output=arrNum.map( (num)=>num*10).map( (num)=>num +1);
-console.log(output)
+// const output=arrNum.map( (num)=>num*10).map( (num)=>num +1).filter( (num)=>num>40);
+// console.log(output)
+
