@@ -34,5 +34,19 @@
 
     addLanguage('Python');
     addOptiLanguage('Ruby');
+    // Edit
+
+    // Select Element
+   const secondElement= document.querySelector('li:nth-child(2)');
+
+   // Create new li element
+   const newli=document.createElement('li');
+ // const newli=secondElement.appendChild(document.createTextNode("Mojo"));
+   
+ // Add text to new li
+   newli.appendChild(document.createTextNode("Mojo"));
+  // then add new li to existing li called Second Element
+ secondElement.replaceWith(newli);
+
 </script>
 </html>
