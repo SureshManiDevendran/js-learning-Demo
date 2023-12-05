@@ -48,5 +48,15 @@
   // then add new li to existing li called Second Element
  secondElement.replaceWith(newli);
 
+ // Edit
+
+ const firstLang=document.querySelector('li:first-child');
+ firstLang.outerHTML="<li>TypeScript</li>"
+
+ // remove
+ const lastLang=document.querySelector('li:last-child');
+ console.log(lastLang);
+ lastLang.remove();
+
 </script>
 </html>
