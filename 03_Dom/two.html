@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Relation</title>
 </head>
-<body>
+<body style="background-color: aqua;color: black;">
     <div class="parent">
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
@@ -16,4 +16,23 @@
         <div class="day">Sunday</div>
     </div>
 </body>
+<script>
+    const myParent=document.querySelector('.parent')
+    // console.log(myParent);
+    // console.log(myParent.children[2].innerHTML);
+
+    //  for (let index = 0; index < myParent.children.length; index++) {
+    //     const element = myParent.children[index].innerHTML;
+    //     console.log(element);
+        
+    //  }
+     myParent.children[0].style.color="green"
+    //  console.log(myParent.firstElementChild.textContent)
+    //  console.log(myParent.lastElementChild.textContent)
+     
+     const dayOne=document.querySelector('.day')
+     console.log(dayOne);
+     console.log(dayOne.parentElement)
+     console.log(dayOne.nextElementSibling)
+</script>
 </html>
