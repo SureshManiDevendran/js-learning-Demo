@@ -21,6 +21,18 @@
       document.querySelector('.language').appendChild(li);
     }
 
+    function addOptiLanguage(languageName)
+    {
+        const li=document.createElement('li'); // creeated li
+        // Adding text to the li using createTextNode it wont traverse all node so it is faster 
+        //as comapre to innerHTML
+        //
+       li.appendChild(document.createTextNode(languageName)); 
+
+       document.querySelector('.language').appendChild(li); // adding to the ul class as language
+    }
+
     addLanguage('Python');
+    addOptiLanguage('Ruby');
 </script>
 </html>
