@@ -26,11 +26,19 @@ document.getElementById('bird').addEventListener('click',(event)=>{
 document.getElementById('images').addEventListener('click',(event)=>{
     //alert("Bird Clicked")
     console.log('click inside the Ul');
-},true);
+},false);
 
 
-document.getElementById('mobile').addEventListener('click',(event)=>{
-    //alert("Bird Clicked")
-    console.log('Click the mobile ');
-},true);   // when true ,capturing mode on from above to below means :- click inside the Ul,Click the mobile
-            //  when false  vice cersa from inside to outside (Bubbling) :- Click the mobile,click inside the Ul
+// document.getElementById('mobile').addEventListener('click',(event)=>{
+//     //alert("Bird Clicked")
+//     console.log('Click the mobile ');
+// },false);   // when true ,capturing mode on from above to below means :- click inside the Ul,Click the mobile
+//             //  when false  vice cersa from inside to outside (Bubbling) :- Click the mobile,click inside the Ul
+
+
+//             document.getElementById('google').addEventListener('click',(event)=>{
+//                 //alert("Bird Clicked")
+//                 event.preventDefault();
+//                 event.stopPropagation();
+//                 console.log('Click the mobile ');
+//             },false); 
